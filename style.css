@@ -1,0 +1,194 @@
+/* Réinitialisation des marges et des paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fond de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('fond_map.jpg');  /* Définit l'image de fond */
+    background-size: cover;  /* Couvre toute la surface de la page */
+    background-position: center;  /* Centrer l'image */
+    background-attachment: fixed;  /* L'image reste fixe lorsque l'on défile */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Conteneur principal */
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);  /* Fond semi-transparent */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre principal */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Message de succès et d'erreur sous le formulaire */
+.success, .error {
+    font-size: 14px;
+    margin-top: 20px;  /* Marge pour espacer du formulaire */
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Message de succès */
+.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+/* Message d'erreur */
+.error {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+/* Style des groupes de champs du formulaire */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style des labels */
+label {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+/* Style des champs de formulaire */
+input[type="text"], input[type="email"], input[type="date"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+}
+
+/* Style pour l'upload de fichiers */
+input[type="file"] {
+    padding: 5px;
+}
+
+/* Style du bouton de soumission */
+input[type="submit"] {
+    background-color: #4CAF50;  /* Vert */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;  /* La largeur est ajustée automatiquement */
+    margin: 0 auto;  /* Centrer le bouton */
+    display: block;  /* S'assurer qu'il est sur une nouvelle ligne */
+    transition: background-color 0.3s ease;
+}
+
+/* Effet au survol du bouton */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Style pour les liens */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Ajouter un padding au body pour que le contenu ne soit pas collé aux bords */
+body {
+    padding: 20px;
+}
+
+/* Styles pour le tableau de gestion des signalements */
+.table-dashboard {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Élargissement spécifique du container pour le dashboard */
+.dashboard-page .container {
+    max-width: 1200px; /* Augmente la largeur uniquement pour le dashboard */
+    width: 90%; /* Ajustement pour écrans plus petits */
+}
+
+.table-dashboard th, .table-dashboard td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    word-wrap: break-word;
+}
+
+/* Colonne Statut élargie */
+.table-dashboard th, .table-dashboard td {
+    max-width: 200px; /* Élargir les colonnes de texte */
+}
+
+/* Élargir le tableau */
+.table-dashboard {
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* Amélioration du style pour le formulaire de statut */
+.table-dashboard select {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.table-dashboard button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.table-dashboard button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%; /* Utilisation complète de l'espace disponible */
+    border-collapse: collapse; /* Fusion des bordures */
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd; /* Ajoute une bordure fine */
+    padding: 10px; /* Espacement interne */
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4; /* Fond plus clair pour les en-têtes */
+    font-weight: bold;
+}
+
+td img {
+    max-width: 150px; /* Taille max des photos */
+    height: auto;
+    display: block;
+}
